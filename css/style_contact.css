@@ -3425,34 +3425,6 @@
   .tab-content > .active {
     display: block; }
   
-  .navbar {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    padding: 0.5rem 1rem; }
-    .navbar > .container,
-    .navbar > .container-fluid {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-      justify-content: space-between; }
-  
   .navbar-brand {
     display: inline-block;
     padding-top: 0.3125rem;
@@ -8318,19 +8290,6 @@ body{
   
   /* Container 1 */
   
-  .header{
-    background-image: url("images/night.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    height: 750px;
-    background-size: cover;
-    margin-bottom: 0;
-    bottom: 0;
-    top: 0;
-    right:0;
-    left:0;
-  }
   .navbar{
     margin: 0 300px;
     background-color: rgb(32, 27, 27);
