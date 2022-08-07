@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" ng-app="myApp">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Touristic Places</title>
+  <link rel="icon" href="css/images/bg_checkout.jpg" type="image/ico" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style_packages.css">
+</head>
+
+<body ng-app="myApp">
+  <div class="header">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style="color: white;"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto options">
+          <li class="nav-item">
+            <a class="maplink" href="index.html"><img class="map" src="./css/images/final_logo-removebg-preview.png" alt=""></a>
+          </li>
+          
+          <li class="nav-item">
+            <a href="index.html">Home</span></a>
+          </li>
+          
+          
+          <li class="nav-item">
+            <a href="checkout.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  <div id="tours">
+    <h1 id="sea">Seas</h1>
+    <div class="card-deck topc">
+      <div class="card" id="cards">
+        <img class="card-img-top" id="img1" src="css\images\andaman.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" id="name">Andaman and Nicobar</h5>
+          <p class="card-text">The most beautiful blue spread of eastern oceans. Famous for serene, white sandy beaches and delicious sea food of port blair.</p>
+          <a href="https://en.wikipedia.org/wiki/Andaman_and_Nicobar_Islands" target="_blank" ><button type="button" id="amazon" class="btn btn-outline-primary" onclick="changeBG('img1')">read more</button></a>
+          <div ng-view></div>
+        </div>
+      </div>
+      <div class="card" id="cards">
+        <img class="card-img-top" id="img2" src="css\images\reef.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" id="name">The Great Barrier Reef</h5>
+          <p class="card-text"> One of the planet's most extraordinary natural wonders. Famous for only living organism that could be seen from space, "The coral reef"</p>
+          <a href="https://en.wikipedia.org/wiki/Great_Barrier_Reef" target="_blank"><button type="button" class="btn btn-outline-primary" onclick="changeBG('img2')">read more</button></a>
+        </div>
+      </div>
+      <div class="card" id="cards">
+        <img class="card-img-top" id="img3" src="css\images\caves.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" id="name">Caves beach</h5>
+          <p class="card-text">Shady yet bright experience of Austrailian seas. Highly popular for spearfishing, with the premier target species being the elusive red morwong.</p>
+          <a href="https://www.tripadvisor.com.au/Attraction_Review-g529026-d8646661-Reviews-Caves_Beach-Swansea_Lake_Macquarie_Greater_Newcastle_New_South_Wales.html" target="_blank"><button type="button" class="btn btn-outline-primary" onclick="changeBG('img3')">read more</button></a>
+        </div>
+      </div>
+    </div>
+    <h1 id="mount">Mountains</h1>
+    <div class="card-deck">
+      <div class="card" id="cards">
+        <img class="card-img-top" id="img4" src="css\images\antelope.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" id="name">Antelope Canyon</h5>
+          <p class="card-text">The canvas of nature with fine strokes and smooth finish with beautiful color grade. The andtelope canyons are the sacred site of Navajo nation.</p>
+          <a href="https://www.antelopecanyon.com/" target="_blank"><button type="button" class="btn btn-outline-primary" onclick="changeBG('img4')">read more</button></a>
+        </div>
+      </div>
+      <div class="card" id="cards">
+        <img class="card-img-top" id="img5" src="css\images\fuji.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" id="name">Mount Fuji</h5>
+          <p class="card-text">The splendid snow covered volcano which has seen a gargantuan development of my most favourite culture in the world, Japan.</p>
+          <a href="https://en.wikipedia.org/wiki/Mount_Fuji" target="_blank"><button type="button" class="btn btn-outline-primary" onclick="changeBG('img5')">read more</button></a>
+        </div>
+      </div>
+      <div class="card" id="cards">
+        <img class="card-img-top" id="img6" src="css\images\himalaya.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" id="name">The Himalayas</h5>
+          <p class="card-text">What does it feel like to look down to the most advanced civillization in the entire known universe? well ask The Great Mount Everest.</p>
+          <a href="https://en.wikipedia.org/wiki/Himalayas" target="_blank"><button type="button" class="btn btn-outline-primary" onclick="changeBG('img6')">read more</button></a>
+        </div>
+      </div>
+    </div>
+    <h1 id="landscapes">Landscapes</h1>
+    <hr>
+    <div class="card-deck topc">
+      <div class="card" id="cards">
+        <img class="card-img-top" id="img7" src="css\images\azores.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" id="name">Azores</h5>
+          <p>The Azores are known for their vibrantly-colored blue green lakes, fertile prairies, colorful hydrangeas, 15th century churches, and manor houses.</p>
+          <a href="https://en.wikipedia.org/wiki/Azores" target="_blank"><button type="button" id="amazon" class="btn btn-outline-primary" onclick="changeBG('img7')">read more</button></a>
+          <div ng-view></div>
+        </div>
+      </div>
+      <div class="card" id="cards">
+        <img class="card-img-top" id="img8" src="css\images\iceland.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" id="name">Iceland</h5>
+          <p class="card-text">Land of the vikings and beautiful waterfalls, also widely known as “The Land of Fire and Ice”.</p>
+          <a href="https://en.wikipedia.org/wiki/Iceland" target="_blank"><button type="button" class="btn btn-outline-primary" onclick="changeBG('img8')">read more</button></a>
+        </div>
+      </div>
+      <div class="card" id="cards">
+        <img class="card-img-top" id="img9" src="css\images\amazon.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" id="name">Amazon</h5>
+          <p>The biggest rainforest in the world with the lagest number of living species. Only bravest people choose this as their adventure destiny. There are spiders too</p>
+          <a href="https://en.wikipedia.org/wiki/Amazon_rainforest" target="_blank"><button type="button" class="btn btn-outline-primary" onclick="changeBG('img9')">read more</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="container text-left">
+        <small style="color:wheat" class="copyright">Copyright &copy Obada Allan .All Rights Reserved.</small>
+        <a href="#"><small style="color:wheat" class="fab fa-2x fa-facebook punk">  </small></a>
+        <a href="#"><small style="color:wheat" class="fab fa-2x fa-twitter-square punk">  </small></a>
+        <a href="#"><small style="color:wheat" class="fab fa-2x fa-instagram punk">  </small></a>
+        <a href="#"><small style="color:wheat" class="fas fa-2x fa-envelope punk">  </small></a>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <script src="./javascript/work.js"></script>
+  
+</body>
+
+</html>

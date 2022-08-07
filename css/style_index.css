@@ -1,0 +1,186 @@
+
+body{
+  background-color: #020405;
+  margin: 0;
+}
+
+/* Container 1 */
+
+.header{
+  background-image: url("images/night.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 750px;
+  background-size: cover;
+  margin-bottom: 0;
+  bottom: 0;
+  top: 0;
+  right:0;
+  left:0;
+}
+.navbar{
+  margin: 0;
+  background-color: rgb(32, 27, 27);
+  width: 100%;
+  
+}
+.nav-item{
+  margin: auto;
+}
+a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  margin: auto;
+  padding: 0 50px 0 50px;
+}
+a:hover{
+  color: grey;
+  text-decoration: none;
+  transition: 0.3s;
+}
+h1{
+  text-align: center;
+  margin: 150px 0 0 0;
+  color: white;
+  font-size: 5rem;
+}
+h3{
+  text-align: center;
+  color: white;
+}
+
+.map{
+  width: 100px;
+  margin: auto;
+}
+.map:hover{
+  opacity: 0.5;
+  transition: 0.3s;
+}
+.options{
+  margin: auto;
+  width: inherit;
+}
+.toggler{
+  margin: auto;
+  width: 60px;
+}
+.switch {
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  position: absolute;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #1a1a2e;
+  transition: .4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+}
+input:checked + .slider {
+  background-color: #ffbd69;
+}
+input:focus + .slider {
+  box-shadow: 0 0 1px #1a1a2e;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider {
+  border-radius: 34px;
+}
+.slider:before {
+  border-radius: 50%;
+}
+/* container 2 */
+.card-deck{
+  width: 100%;
+  margin: auto;
+}
+.a{
+  width: 100%;
+}
+.containertwo{
+  width: 80%;
+  margin: 0 auto 100px;;
+}
+p{
+  color: white;
+  text-align: center;
+}
+.text{
+  top: 0;
+  position: relative;
+  width: 500px;
+  margin: auto;
+  padding-bottom: 50px;
+}
+.gp{
+  text-align: center;
+  color:#fff;
+}
+.a:hover{
+  transition: 0.3s;
+  transform: scale(0.9);
+  opacity: 0.5;
+}
+.seem{
+  width: inherit;
+  text-align: center;
+}
+.row{
+  padding: 0;
+}
+/* container 3 */
+.card-group{
+  margin: auto;
+  border: none;
+  width: 60%;
+  background-color: inherit;
+}
+.card{
+  background-color: inherit;
+  padding: 10px;
+}
+.card-body{
+  background-color: #020405;
+}
+
+
+/* footer */
+
+.footer{
+  margin: auto;
+  position: relative;
+  top: 300px;
+  background-color: rgb(32, 27, 27);
+  padding: 50px;
+}
+.footer a:hover
+{
+  opacity: .3;
+}
